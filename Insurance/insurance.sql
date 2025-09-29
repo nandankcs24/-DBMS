@@ -80,3 +80,4 @@ SELECT * FROM PARTICIPATED ORDER BY DAMAGE_AMOUNTT DESC;
 SELECT * FROM PARTICIPATED ORDER BY DAMAGE_AMOUNT DESC;
 SELECT AVG(DAMAGE_AMOUNT) FROM PARTICIPATED;
 SELECT MAX(DAMAGE_AMOUNT) FROM PARTICIPATED;
+select count(distinct driver_id) cnt from participated p, accident a where p.report_num=a.report_num and a.accident_date like '%08%';
