@@ -1,5 +1,5 @@
 show databases;
-use test;
+use labbase;
 create table person (
     driver_id varchar(10),
     name varchar(20),
@@ -76,3 +76,7 @@ select * from owns;
 select * from participated;
 select accident_date, location
 from ACCIDENT;
+SELECT * FROM PARTICIPATED ORDER BY DAMAGE_AMOUNTT DESC;
+SELECT * FROM PARTICIPATED ORDER BY DAMAGE_AMOUNT DESC;
+SELECT AVG(DAMAGE_AMOUNT) FROM PARTICIPATED;
+SELECT MAX(DAMAGE_AMOUNT) FROM PARTICIPATED;
