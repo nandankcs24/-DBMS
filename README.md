@@ -92,6 +92,24 @@ INSERT INTO reservation VALUES
 (1002, 102, 1, 102, '2025-01-15', '2025-01-18', 'Confirmed'),
 (1003, 103, 2, 201, '2025-01-20', '2025-01-22', 'Pending');
 
+
 INSERT INTO payment VALUES
 (5001, 1001, '2025-01-09', 'UPI', 9000),
-(5002, 1002, '2025-01-14', 'Card', 24000);
+(5002, 1002, '2025-01-14', 'Card', 24000)
+(5003, 1003, '2025-01-19', 'UPI', 5000);
+
+
+
+
+
+
+
+
+
+
+
+
+guest --> reservation --> hotel
+guest --> reservation --> payment
+hotel --> reservation --> payment
+hotel --> room --> reservation
